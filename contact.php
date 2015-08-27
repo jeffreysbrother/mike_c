@@ -1,3 +1,59 @@
+<?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+$name = trim($_POST["name"]);
+$email = trim($_POST["email"]);
+$phone = trim($_POST["phone"]);
+$message = trim($_POST["message"]);
+
+if ($name == "" OR $email == "" OR $message == ""){
+echo "You must first specify a value for the NAME, EMAIL, and MESSAGE fields";
+exit;
+}
+
+foreach( $_POST as $value ){
+if(stripos($value, 'Content-Type:') !== FALSE ){
+  echo "There was a problem with the information submitted.";
+  exit;
+}
+}
+
+if ($_POST["address"] != "") {
+echo "Your form submission has an error.";
+exit;
+}
+
+require_once("inc/phpmailer/class.phpmailer.php");
+$mail = new PHPMailer();
+
+//this is not working!
+if (!$mail->ValidateAddress($email)){
+echo "You must specify a valid email address.";
+exit;
+}
+
+$email_body = "";
+$email_body = $email_body . "Name: " . $name . "<br />";
+$email_body = $email_body . "Email: " . $email . "<br />";
+$email_body = $email_body . "Message: " . $message;
+
+$mail->SetFrom($email, $name);
+$address = "jeffreysbrother@gmail.com";
+$mail->AddAddress($address, "jeffreysbrother");
+$mail->Subject    = "jeffreysbrother: Contact Form Submission | " . $name;
+$mail->MsgHTML($email_body);
+
+if(!$mail->Send()){
+echo "There was a problem sending the email: " . $mail->ErrorInfo;
+exit;
+}
+
+//redirect after we send the email
+header("Location: contact.php?status=thanks");
+exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,133 +88,52 @@
 <h2>Contact</h2>
 
 
-    <?php
-
-      if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $name = trim($_POST["name"]);
-        $email = trim($_POST["email"]);
-        $phone = trim($_POST["phone"]);
-        $message = trim($_POST["message"]);
-
-        if ($name == "" OR $email == "" OR $message == ""){
-          $error_message = "Please specify a value for the NAME, EMAIL, and MESSAGE fields";
-        }
-
-        if (!isset($error_message)) {
-          foreach( $_POST as $value ){
-            if(stripos($value, 'Content-Type:') !== FALSE ){
-              $error_message = "There was a problem with the information submitted.";
-            }
-          }
-        }
-
-        if (!isset($error_message) && $_POST["address"] != "") {
-          $error_message = "Your form submission has an error. Please try again.";
-        }
-
-        require_once("inc/class.phpmailer.php");
-        $mail = new PHPMailer();
-
-        if (!isset($error_message) && !$mail->ValidateAddress($email)){
-          $error_message = "Please specify a valid email address.";
-        }
-
-        if (!isset($error_message)) {
-          $email_body = "";
-          $email_body = $email_body . "Name: " . $name . "<br />";
-          $email_body = $email_body . "Email: " . $email . "<br />";
-          $email_body = $email_body . "Message: " . $message;
-
-          $mail->SetFrom($email, $name);
-          $address = "michaelchambersmusic@gmail.com";
-          $mail->AddAddress($address, "jeffreysbrother");
-          $mail->Subject    = "jeffreysbrother: Contact Form Submission | " . $name;
-          $mail->MsgHTML($email_body);
-
-          if($mail->Send()){
-              header("Location: " localhost/ "contact/?status=thanks");
-              exit;
-          } else {
-            $error_message = "There was a problem sending the email: " . $mail->ErrorInfo;
-          }
-        }
-      }
-
-    ?>
-
-    <?php
-
-    $pageTitle = "contact.php";
-    $pageDescription = "Contact me for music, photo, or video projects.";
-    $fbURL = "http://jeffreysbrother.com/contact.php";
-    ?>
-
-      <?php
-        if (isset($_GET["status"]) AND $_GET["status"] == "thanks") { ?>
-
-          <div class="container">
-                <h1>Thanks for the email!</h1>
-          </div>
-        <?php } else { ?>
+<?php
+if (isset($_GET["status"]) AND $_GET["status"] == "thanks") { ?>
+        <h1>Thanks for the email!</h1>
+<?php } else { ?>
 
 
+            <p>I&rsquo;d love to hear from you! Complete the form to send me an email.</p>
 
-                    <?php
-                      if (isset($error_message)){
-                        echo '
-                        <div>
-                        <p><strong>' . $error_message . '</strong></p></div>';
-                      }
-                    ?>
+            <form method="post" action="contact.php">
 
-                    <form class="form-horizontal" method="post" action="contact/">
-                      <fieldset>
-                                <!-- <legend class="text-center header">//Contact</legend> -->
-                                <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-1 text-center">
-                                    </span>
-                                    <div class="col-md-8">
-                                        <input id="name" name="name" type="text" placeholder="Name" class="form-control" value="<?php if(isset($name)) { echo htmlspecialchars($name); } ?>">
-                                    </div>
-                                </div>
+                <table>
+                    <tr>
+                        <th>
+                            <label for="name">Name</label>
+                        </th>
+                        <td>
+                            <input type="text" name="name" id="name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="email">Email</label>
+                        </th>
+                        <td>
+                            <input type="text" name="email" id="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="message">Message</label>
+                        </th>
+                        <td>
+                            <textarea name="message" id="message"></textarea>
+                        </td>
+                    </tr>
+                    <tr style="display: none;">
+                        <th>
+                            <label for="address">Address</label>
+                        </th>
+                        <td>
+                            <input type="text" name="address" id="address">
+                            <p>Humans: please leave this field blank.</p>
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" value="Send">
+            </form>
 
-                                <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-1 text-center">
-                                    </span>
-                                    <div class="col-md-8">
-                                        <input id="email" name="email" type="text" placeholder="Email" class="form-control" value="<?php if(isset($email)) { echo htmlspecialchars($email); } ?>">
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-1 text-center">
-                                    </span>
-                                    <div class="col-md-8">
-                                        <textarea class="form-control" id="message" name="message" placeholder="Enter your message here." rows="7"> <?php if (isset($message)) { echo htmlspecialchars($message); } ?></textarea>
-                                    </div>
-                                </div>
-
-                                <div class="form-group" style="display: none;">
-                                    <span class="col-md-1 col-md-offset-1 text-center">
-                                    </span>
-                                    <div class="col-md-8">
-                                        <textarea class="form-control" id="address" name="address" placeholder="Humans: please leave this field blank." rows="7"></textarea>
-                                    </div>
-                                </div>
-
-                                <div class="form-group last-paragraph">
-                                    <div class="col-md-12 text-center">
-                                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-                                    </div>
-                                </div>
-                            </fieldset>
-                    </form>
-
-      <?php } ?>
-
-
-
-
-
-
-  </div>
+<?php } ?>

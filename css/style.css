@@ -154,5 +154,21 @@ CONCERTS PAGE
 
 
 /**********************************
-GOOGLE FONTS
+CONTACT PAGE
 ***********************************/
+
+input, textarea {
+  background-color: white;
+}
+
+label {
+  font-weight: 100;
+}
+
+input, select, textarea{
+    color: black;
+}
+
+textarea:focus, input:focus {
+    color: black;
+}
