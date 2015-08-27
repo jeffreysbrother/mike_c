@@ -114,7 +114,7 @@ if (isset($_GET["status"]) AND $_GET["status"] == "thanks") { ?>
                             <input type="text" name="address" id="address">
                             <p style="display: none;">Humans: please leave this field blank.</p>
                         </p>
-                <input type="submit" value="Send">
+                <input class="button1" type="submit" value="Send">
             </form>
 
 <?php } ?>

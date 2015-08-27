@@ -190,7 +190,6 @@ textarea {
   width: 100px;
   height: 40px;
   background-color: blue;
-
 }
 
 input {
@@ -199,4 +198,8 @@ input {
 
 .form1 {
   width: 400px;
+}
+
+.button1 {
+  font-weight: bold;
 }
