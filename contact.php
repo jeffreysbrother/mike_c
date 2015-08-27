@@ -23,7 +23,7 @@ echo "Your form submission has an error.";
 exit;
 }
 
-require_once("inc/phpmailer/class.phpmailer.php");
+require_once("inc/class.phpmailer.php");
 $mail = new PHPMailer();
 
 //this is not working!
@@ -94,45 +94,26 @@ if (isset($_GET["status"]) AND $_GET["status"] == "thanks") { ?>
 <?php } else { ?>
 
 
-            <p>I&rsquo;d love to hear from you! Complete the form to send me an email.</p>
+            <!-- <p>I&rsquo;d love to hear from you! Complete the form to send me an email.</p> -->
 
             <form method="post" action="contact.php">
 
-                <table>
-                    <tr>
-                        <th>
-                            <label for="name">Name</label>
-                        </th>
-                        <td>
-                            <input type="text" name="name" id="name">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="email">Email</label>
-                        </th>
-                        <td>
-                            <input type="text" name="email" id="email">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="message">Message</label>
-                        </th>
-                        <td>
-                            <textarea name="message" id="message"></textarea>
-                        </td>
-                    </tr>
-                    <tr style="display: none;">
-                        <th>
-                            <label for="address">Address</label>
-                        </th>
-                        <td>
+                        <p>
+                            <input type="text" name="name" id="name" placeholder="name">
+                        </p>
+
+                        <p>
+                            <input type="text" name="email" id="email" placeholder="email">
+                        </p>
+
+                        <p>
+                            <textarea name="message" id="message" placeholder="message me!"></textarea>
+                        </p>
+
+                        <p style="display: none;">
                             <input type="text" name="address" id="address">
-                            <p>Humans: please leave this field blank.</p>
-                        </td>
-                    </tr>
-                </table>
+                            <p style="display: none;">Humans: please leave this field blank.</p>
+                        </p>
                 <input type="submit" value="Send">
             </form>
 

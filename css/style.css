@@ -157,7 +157,7 @@ CONCERTS PAGE
 CONTACT PAGE
 ***********************************/
 
-input, textarea {
+textarea {
   background-color: white;
 }
 
@@ -165,10 +165,34 @@ label {
   font-weight: 100;
 }
 
-input, select, textarea{
-    color: black;
+input, textarea{
+    padding: 10px;
+    border: 1px solid #E5E5E5;
+    width: 200px;
+    /*color: #999;*/
 }
 
 textarea:focus, input:focus {
     color: black;
+}
+
+form {
+  padding-top: 10px;
+}
+
+textarea {
+  width: 400px;
+  height: 250px;
+  max-width: 400px;
+}
+
+.submit input {
+  width: 100px;
+  height: 40px;
+  background-color: blue;
+
+}
+
+input {
+  color: black;
 }
