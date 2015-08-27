@@ -99,11 +99,11 @@ if (isset($_GET["status"]) AND $_GET["status"] == "thanks") { ?>
             <form method="post" action="contact.php">
 
                         <p>
-                            <input type="text" name="name" id="name" placeholder="name">
+                            <input class="form1" type="text" name="name" id="name" placeholder="name">
                         </p>
 
                         <p>
-                            <input type="text" name="email" id="email" placeholder="email">
+                            <input class="form1" type="text" name="email" id="email" placeholder="email">
                         </p>
 
                         <p>
