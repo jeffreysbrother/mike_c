@@ -23,7 +23,6 @@ nav {
   float: left;
   padding-left: 20px;
   font-weight: bold;
-
 }
 
 .main_container {
@@ -184,6 +183,7 @@ textarea {
   width: 400px;
   height: 250px;
   max-width: 400px;
+  color: black;
 }
 
 .submit input {
@@ -202,4 +202,14 @@ input {
 
 .button1 {
   font-weight: bold;
+}
+
+p.message {
+    background: #E7D3B1;
+    border: 1px solid #f16702;
+    padding: 1em;
+    width: 344px;
+    color: red;
+    padding-right: 60px;
+    text-align: center;
 }
