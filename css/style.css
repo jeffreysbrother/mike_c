@@ -1,0 +1,158 @@
+body {
+  background-color: black;
+}
+
+html{
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+nav {
+  word-spacing: 73px;
+  text-align: right;
+  padding-right: 40px;
+  font-weight: 100;
+  font-size: .9em;
+}
+
+.title1 {
+  float: left;
+  padding-left: 20px;
+  font-weight: bold;
+
+}
+
+.main_container {
+  padding-top: 35px;
+  padding-left: 35px;
+  padding-right: 35px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+}
+
+.box {
+  margin-left: auto;
+  margin-right: auto;
+  width: 940px;
+  padding-top: 20px;
+  /*border: 1px solid #E7D3B1;*/
+}
+
+h3, .title1 span {
+  color: #E7D3B1;
+}
+
+h3 {
+  font-weight: 100;
+  letter-spacing: 4px;
+  font-size: 1em;
+}
+
+.box p {
+  font-weight: 100;
+  font-size: .95em;
+}
+
+.box h3 {
+  border-bottom: 1px solid #E7D3B1;
+}
+
+.box p span {
+  font-style: italic;
+}
+
+.subtitle {
+  text-align: center;
+}
+
+.blue {
+  color: #326C77;
+  letter-spacing: 9px;
+  position: absolute;
+  top: 60px;
+  left: 400px;
+}
+
+.box .copyright {
+  font-size: 12px;
+  float: left;
+}
+
+.icon_fonts {
+  text-align: right;
+  font-size: 22px;
+  word-spacing: 16px;
+}
+
+/**********************************
+TITLES FOR ALL PAGES
+***********************************/
+
+h2 {
+  color: #CFB486;
+  font-weight: 100;
+  padding-top: 40px;
+  letter-spacing: 4px;
+}
+
+/**********************************
+MEDIA PAGE
+***********************************/
+
+audio {
+    background-color: white;
+    border-radius: 7px;
+}
+
+.audio_wrapper p {
+  font-weight: 100;
+  font-size: .8em;
+}
+
+
+
+/**********************************
+BIOGRAPHY PAGE
+***********************************/
+
+.content_block {
+  width: 500px;
+  float: left;
+}
+
+.content_block p {
+  font-weight: 100;
+}
+
+.image_station {
+  /*padding-left: 30px;*/
+  float: right;
+  padding-top: 35px;
+}
+
+
+/**********************************
+CONCERTS PAGE
+***********************************/
+
+.img_concerts {
+  padding-top: 25px;
+}
+
+
+
+/**********************************
+GOOGLE FONTS
+***********************************/
