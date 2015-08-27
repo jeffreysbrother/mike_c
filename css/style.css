@@ -23,6 +23,7 @@ nav {
   float: left;
   padding-left: 20px;
   font-weight: bold;
+  font-size: 1.1em;
 }
 
 .main_container {
@@ -118,8 +119,24 @@ audio {
 .audio_wrapper p {
   font-weight: 100;
   font-size: .8em;
+
 }
 
+.audio_wrapper {
+  /*max-width: 300px;*/
+  /*border: 1px solid white;*/
+  display: inline;
+  float: left;
+  margin-right: 270px;
+  margin-left: -190px;
+}
+
+.video_wrapper {
+  /*max-width: 400px;*/
+  /*border: 1px solid white;*/
+  display: inline;
+  clear: right;
+}
 
 
 /**********************************
