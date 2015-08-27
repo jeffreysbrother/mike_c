@@ -119,3 +119,7 @@ if (isset($_GET["status"]) AND $_GET["status"] == "thanks") { ?>
             </form>
 
 <?php } ?>
+
+</div>
+</body>
+</html>

@@ -12,6 +12,7 @@
   <meta property="og:url" content="http://www.michaelchambersmusic.com/"/>
   <meta property="og:site_name" content="Michael Chambers Film Composer"/>
   <meta property="og:description" content="Michael Chambers is a Film Composer, Songwriter, and Producer"/>
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -84,4 +85,16 @@
 
 
 
+
   </div>
+  <!-- the script below allows only one audio track to play at a given time -->
+<script type="text/javascript">
+  $("audio").on("play", function() {
+    $("audio").not(this).each(function(index, audio) {
+        audio.pause();
+    });
+  });
+</script>
+
+  </body>
+</html>
