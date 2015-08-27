@@ -97,7 +97,7 @@ if (isset($_GET["status"]) AND $_GET["status"] == "thanks") { ?>
               }
             ?>
 
-            <form method="post" action="contact.php">
+            <form class="contact_form" method="post" action="contact.php">
 
                         <p>
                             <input class="form1" type="text" name="name" id="name" placeholder="name" value="<?php if (isset($name)) { echo htmlspecialchars($name); }?>">

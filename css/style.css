@@ -139,6 +139,10 @@ audio {
 }
 
 
+
+
+
+
 /**********************************
 BIOGRAPHY PAGE
 ***********************************/
@@ -230,3 +234,17 @@ p.message {
     padding-right: 60px;
     text-align: center;
 }
+
+
+
+/**********************************
+MEDIA QUERIES
+***********************************/
+
+
+/*@media (max-width: 1045px) {
+  .contact_form {
+    width: 50%;
+    margin: 0 auto;
+  }
+}*/
