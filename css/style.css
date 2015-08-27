@@ -242,9 +242,20 @@ MEDIA QUERIES
 ***********************************/
 
 
-/*@media (max-width: 1045px) {
-  .contact_form {
+@media (max-width: 1045px) {
+  .content_block {
+    width: inherit;
+  }
+  .audio_wrapper {
+    display: block;
+    margin-right: 0px;
+    margin-left: 0px;
     width: 50%;
     margin: 0 auto;
+    float: none;
   }
-}*/
+  .video_wrapper {
+    display: block;
+    clear: none;
+  }
+}
