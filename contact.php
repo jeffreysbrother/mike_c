@@ -25,7 +25,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   require_once("inc/class.phpmailer.php");
   $mail = new PHPMailer();
 
-  //this is not working!
   if (!isset($error_message) && !$mail->ValidateAddress($email)){
   $error_message = "You must specify a valid email address.";
   }
@@ -37,9 +36,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $email_body = $email_body . "Message: " . $message;
 
       $mail->SetFrom($email, $name);
-      $address = "jeffreysbrother@gmail.com";
-      $mail->AddAddress($address, "jeffreysbrother");
-      $mail->Subject    = "jeffreysbrother: Contact Form Submission | " . $name;
+      $address = "mchambers175@gmail.com";
+      $mail->AddAddress($address, "Michael Chambers Music");
+      $mail->Subject = "Michael Chambers Music Contact Form Submission | " . $name;
       $mail->MsgHTML($email_body);
 
       if($mail->Send()){
