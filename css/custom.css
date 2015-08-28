@@ -125,9 +125,8 @@ i {
 
 @media screen and (max-width: 767px) {
     .videobox, .audiobox {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+    display: table;
+    margin: 0 auto;
     }
 }
 
@@ -143,6 +142,8 @@ i {
 
   i {
     text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   .icons {
     display: block;
