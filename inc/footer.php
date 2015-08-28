@@ -1,13 +1,15 @@
-<!-- <footer class="footer">
-      <div class="container">
-        <p class="copyright">&copy; 2015 by Michael Chambers. All rights reserved.</p>
+<div class="bottom-spacer"></div>
 
-        <div class="icon_fonts">
+<div class="navbar navbar-default navbar-fixed-bottom">
+      <div class="container text-bottom">
+        <p class="copyright">&copy; <?php echo date('Y'); ?> by Michael Chambers. All rights reserved.</p>
+        <span class="icons">
           <a href="https://www.facebook.com/TheSwellDive" target="_blank"><i class="fa fa-facebook"></i></a>
           <a href="https://www.youtube.com/user/agoodnitecry" target="_blank"><i class="fa fa-youtube"></i></a>
-        </div>
+        </span>
+
       </div>
-    </footer> -->
+    </div>
 
 </div>
 
