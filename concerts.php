@@ -1,15 +1,18 @@
 <?php
+$pageTitle = "concerts.php";
 include('inc/header.php');
 ?>
 
-
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
     <h2>Concerts</h2>
 
     <p>No shows currently scheduled.</p>
-    <div class="img_concerts">
-      <img src="img/tails.jpg" alt="">
+      <img class="img-responsive" src="img/tails.jpg" alt="">
     </div>
-
+  </div>
+</div>
 
 
 

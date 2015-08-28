@@ -54,10 +54,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 <?php
+$pageTitle = "contact.php";
 include('inc/header.php');
 ?>
 
-<h2>Contact</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+
+                <h2>Contact</h2>
 
 <?php
 if (isset($_GET["status"]) AND $_GET["status"] == "thanks") { ?>
@@ -69,6 +74,8 @@ if (isset($_GET["status"]) AND $_GET["status"] == "thanks") { ?>
                 echo '<p class="message">' . $error_message . '</p>';
               }
             ?>
+
+
 
             <form class="contact_form" method="post" action="contact.php">
 
@@ -91,9 +98,12 @@ if (isset($_GET["status"]) AND $_GET["status"] == "thanks") { ?>
                 <input class="button1" type="submit" value="Send">
             </form>
 
+          </div>
+        </div>
+      </div>
+
 <?php } ?>
 
-</div>
 
 <?php
 include('inc/footer.php');

@@ -1,0 +1,93 @@
+body { padding-top: 60px; }
+/*@media screen and (max-width: 768px) {
+    body { padding-top: 0px; }
+}*/
+
+
+p {
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+.navbar {
+  background-color: black;
+}
+
+
+audio {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.station {
+  position: relative;
+  top: 55px;
+}
+
+
+
+
+/**********************************
+CONTACT PAGE
+***********************************/
+
+textarea {
+  background-color: white;
+}
+
+label {
+  font-weight: 100;
+}
+
+input, textarea{
+    padding: 10px;
+    border: 1px solid #E5E5E5;
+    width: 200px;
+    /*color: #999;*/
+}
+
+textarea:focus, input:focus {
+    color: black;
+}
+
+form {
+  padding-top: 10px;
+}
+
+textarea {
+  width: 400px;
+  height: 250px;
+  max-width: 400px;
+  color: black;
+}
+
+.submit input {
+  width: 100px;
+  height: 40px;
+  background-color: blue;
+}
+
+input {
+  color: black;
+}
+
+.form1 {
+  width: 400px;
+}
+
+.button1 {
+  font-weight: bold;
+}
+
+p.message {
+    background: #E7D3B1;
+    border: 1px solid #f16702;
+    padding: 1em;
+    width: 344px;
+    color: red;
+    padding-right: 60px;
+    text-align: center;
+}
