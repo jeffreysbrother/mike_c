@@ -4,71 +4,77 @@ include('inc/header.php');
 ?>
       <div class="container">
       <div class="row">
-      <div class="col-md-7">
+      <div class="col-sm-3 col-md-5">
+        <div class="audiobox">
 
-        <h2>Recordings</h2>
+          <h2>Recordings</h2>
 
-        <p>Action</p>
-        <audio src="audio/Action.mp3" controls>
-          <p>Your browser does not support the <code>audio</code> element.</p>
-        </audio>
+          <p>Action</p>
+          <audio src="audio/Action.mp3" controls>
+            <p>Your browser does not support the <code>audio</code> element.</p>
+          </audio>
 
-        <p>Ambient</p>
-        <audio src="audio/Ambient.wav" controls>
-          <p>Your browser does not support the <code>audio</code> element.</p>
-        </audio>
+          <p>Ambient</p>
+          <audio src="audio/Ambient.wav" controls>
+            <p>Your browser does not support the <code>audio</code> element.</p>
+          </audio>
 
-        <p>Baroque Pop</p>
-        <audio src="audio/Baroque_Pop.wav" controls>
-          <p>Your browser does not support the <code>audio</code> element.</p>
-        </audio>
+          <p>Baroque Pop</p>
+          <audio src="audio/Baroque_Pop.wav" controls>
+            <p>Your browser does not support the <code>audio</code> element.</p>
+          </audio>
 
-        <p>Dramatic</p>
-        <audio src="audio/Dramatic.mp3" controls>
-          <p>Your browser does not support the <code>audio</code> element.</p>
-        </audio>
+          <p>Dramatic</p>
+          <audio src="audio/Dramatic.mp3" controls>
+            <p>Your browser does not support the <code>audio</code> element.</p>
+          </audio>
 
-        <p>Fantasy Adventure</p>
-        <audio src="audio/Fantasty_Adventure.mp3" controls>
-          <p>Your browser does not support the <code>audio</code> element.</p>
-        </audio>
+          <p>Fantasy Adventure</p>
+          <audio src="audio/Fantasty_Adventure.mp3" controls>
+            <p>Your browser does not support the <code>audio</code> element.</p>
+          </audio>
 
-        <p>Quirky</p>
-        <audio src="audio/Quirky.mp3" controls>
-          <p>Your browser does not support the <code>audio</code> element.</p>
-        </audio>
+          <p>Quirky</p>
+          <audio src="audio/Quirky.mp3" controls>
+            <p>Your browser does not support the <code>audio</code> element.</p>
+          </audio>
 
-        <p>Romantic Comedy</p>
-        <audio src="audio/Romantic_Comedy.mp3" controls>
-          <p>Your browser does not support the <code>audio</code> element.</p>
-        </audio>
+          <p>Romantic Comedy</p>
+          <audio src="audio/Romantic_Comedy.mp3" controls>
+            <p>Your browser does not support the <code>audio</code> element.</p>
+          </audio>
 
-        <p>Thematic Medley</p>
-        <audio src="audio/Thematic_Medley.mp3" controls>
-          <p>Your browser does not support the <code>audio</code> element.</p>
-        </audio>
+          <p>Thematic Medley</p>
+          <audio src="audio/Thematic_Medley.mp3" controls>
+            <p>Your browser does not support the <code>audio</code> element.</p>
+          </audio>
 
-        <p>Western Title</p>
-        <audio src="audio/Western_Title.wav" controls>
-          <p>Your browser does not support the <code>audio</code> element.</p>
-        </audio>
+          <p>Western Title</p>
+          <audio src="audio/Western_Title.wav" controls>
+            <p>Your browser does not support the <code>audio</code> element.</p>
+          </audio>
+
+          <br>
+          <br>
+        </div>
 
       </div>
 
       <div class="row">
-      <div class="col-md-5">
-        <h2>Videos</h2>
+      <div class="col-sm-3 col-sm-offset-4 col-md-4 col-md-offset-2">
+        <div class="videobox">
+          <h2>Videos</h2>
+          <br>
+          <iframe class="img-responsive" width="400" height="260" src="https://www.youtube.com/embed/ebjJ_4R3no4" frameborder="0" allowfullscreen></iframe>
 
-        <iframe class="img-responsive" width="400" height="260" src="https://www.youtube.com/embed/ebjJ_4R3no4" frameborder="0" allowfullscreen></iframe>
+          <br>
 
-        <br>
+          <iframe class="img-responsive" width="400" height="260" src="https://www.youtube.com/embed/kEcSPpkk-tg" frameborder="0" allowfullscreen></iframe>
 
-        <iframe class="img-responsive" width="400" height="260" src="https://www.youtube.com/embed/kEcSPpkk-tg" frameborder="0" allowfullscreen></iframe>
+          <br>
 
-        <br>
-
-        <iframe class="img-responsive" width="400" height="260" src="https://www.youtube.com/embed/oBfd0siZiO0" frameborder="0" allowfullscreen></iframe>
-
+          <iframe class="img-responsive" width="400" height="260" src="https://www.youtube.com/embed/oBfd0siZiO0" frameborder="0" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
 

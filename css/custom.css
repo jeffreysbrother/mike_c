@@ -1,7 +1,5 @@
 body { padding-top: 60px; }
-/*@media screen and (max-width: 768px) {
-    body { padding-top: 0px; }
-}*/
+
 
 
 p {
@@ -26,6 +24,18 @@ audio {
   position: relative;
   top: 55px;
 }
+
+h3, h2 {
+  color: #E7D3B1;
+  font-weight: 200;
+  letter-spacing: 4px;
+}
+
+p {
+  color: #bdbdbd;
+  font-size: 1.1em;
+}
+
 
 
 
@@ -86,8 +96,26 @@ p.message {
     background: #E7D3B1;
     border: 1px solid #f16702;
     padding: 1em;
-    width: 344px;
+    width: 400px;
     color: red;
     padding-right: 60px;
     text-align: center;
+}
+
+
+@media screen and (max-width: 437px) {
+    textarea, input, .form1, p.message {
+      width: 100%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    .station, .videobox, .audiobox {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
 }
