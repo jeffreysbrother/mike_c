@@ -22,25 +22,9 @@
     <div class="title1"><span>Michael</span> CHAMBERS</div>
 
     <nav>
-      <a href="index.html">Home</a>
-      <a href="media.html">Media</a>
-      <a href="concerts.html">Concerts</a>
-      <a href="biography.html">Biography</a>
+      <a href="index.php">Home</a>
+      <a href="media.php">Media</a>
+      <a href="concerts.php">Concerts</a>
+      <a href="biography.php">Biography</a>
       <a href="contact.php">Contact</a>
     </nav>
-
-
-    <h2>Concerts</h2>
-
-    <p>No shows currently scheduled.</p>
-    <div class="img_concerts">
-      <img src="img/tails.jpg" alt="">
-    </div>
-
-
-
-
-
-  </div>
-</body>
-</html>
