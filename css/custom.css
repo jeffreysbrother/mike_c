@@ -21,7 +21,7 @@ audio {
 
 .station {
   position: relative;
-  top: 55px;
+  top: 65px;
 }
 
 .copyright {
@@ -124,7 +124,15 @@ i {
 }
 
 @media screen and (max-width: 767px) {
-    .station, .videobox, .audiobox {
+    .videobox, .audiobox {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .station {
       display: block;
       margin-left: auto;
       margin-right: auto;

@@ -7,7 +7,7 @@ include('inc/header.php');
 
   <div class="row">
 
-    <div class="col-sm-6">
+    <div class="col-md-6">
       <h2>About Michael</h2>
 
       <p>Michael Chambers is a composer, songwriter, and producer.</p>
@@ -19,8 +19,8 @@ include('inc/header.php');
       <p>Currently, Michael works as an assistant to film composer David Kitay (Clueless, Look Who's Talking, Dude Where's My Car).</p>
     </div>
 
-    <div class="col-sm-4 col-sm-offset-1">
-      <img class="station" src="img/station.jpg" alt="">
+    <div class="col-md-4 col-md-offset-2">
+      <img class="img-responsive station" src="img/station.jpg" alt="">
     </div>
 
   </div>
