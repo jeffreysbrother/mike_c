@@ -7,7 +7,7 @@ include('inc/header.php');
       <div class="col-sm-3 col-md-5">
         <div class="audiobox">
 
-          <h2>Recordings</h2>
+          <h2>Music</h2>
 
           <p>Action</p>
           <audio src="audio/Action.mp3" controls>
@@ -63,7 +63,7 @@ include('inc/header.php');
       <div class="row">
       <div class="col-sm-3 col-sm-offset-4 col-md-4 col-md-offset-2">
         <div class="videobox">
-          <h2>Videos</h2>
+          <h2>Video</h2>
           <br>
           <iframe class="img-responsive" width="400" height="260" src="https://www.youtube.com/embed/ebjJ_4R3no4" frameborder="0" allowfullscreen></iframe>
 
@@ -85,14 +85,14 @@ include('inc/header.php');
 
 
 
-
+</div>
 
 
   <?php
   include('inc/footer.php');
   ?>
-</div>
-</div>
+
+
   <!-- the script below allows only one audio track to play at a given time -->
   <script type="text/javascript">
     $("audio").on("play", function() {
@@ -101,6 +101,3 @@ include('inc/header.php');
       });
     });
   </script>
-
-  </body>
-</html>

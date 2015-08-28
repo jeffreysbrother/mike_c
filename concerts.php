@@ -9,10 +9,10 @@ include('inc/header.php');
     <h2>Concerts</h2>
 
     <p>No shows currently scheduled.</p>
-      <img class="img-responsive" src="img/tails.jpg" alt="">
+      <img class="img-responsive tails-image" src="img/tails.jpg" alt="">
     </div>
   </div>
-</div>
+
 
 
 

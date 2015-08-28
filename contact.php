@@ -100,7 +100,7 @@ if (isset($_GET["status"]) AND $_GET["status"] == "thanks") { ?>
 
           </div>
         </div>
-      </div>
+
 
 <?php } ?>
 

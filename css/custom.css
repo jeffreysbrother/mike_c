@@ -1,19 +1,17 @@
-body { padding-top: 60px; }
-
-
-
-p {
-  color: white;
+body {
+  padding-top: 60px;
+  background-color: black;
 }
 
-body {
-  background-color: black;
+p {
+  color: #bdbdbd;
+  font-size: 1.1em;
 }
 
 .navbar {
   background-color: black;
+  padding-top: 5px;
 }
-
 
 audio {
   background-color: white;
@@ -25,28 +23,24 @@ audio {
   top: 55px;
 }
 
+/*.copyright, .icon_fonts {
+  display: inline;
+}*/
+
+
 h3, h2 {
   color: #E7D3B1;
   font-weight: 200;
   letter-spacing: 4px;
 }
 
-p {
-  color: #bdbdbd;
-  font-size: 1.1em;
+.tails-image {
+  padding-top: 6px;
 }
-
-
-
-
 
 /**********************************
 CONTACT PAGE
 ***********************************/
-
-textarea {
-  background-color: white;
-}
 
 label {
   font-weight: 100;
@@ -56,11 +50,6 @@ input, textarea{
     padding: 10px;
     border: 1px solid #E5E5E5;
     width: 200px;
-    /*color: #999;*/
-}
-
-textarea:focus, input:focus {
-    color: black;
 }
 
 form {
@@ -68,6 +57,7 @@ form {
 }
 
 textarea {
+  background-color: white;
   width: 400px;
   height: 250px;
   max-width: 400px;
@@ -100,8 +90,19 @@ p.message {
     color: red;
     padding-right: 60px;
     text-align: center;
+    font-weight: bold;
 }
 
+.icon_fonts {
+  text-align: right;
+  font-size: 22px;
+  word-spacing: 16px;
+  float: right;
+}
+
+i {
+  color: #bdbdbd;
+}
 
 @media screen and (max-width: 437px) {
     textarea, input, .form1, p.message {
@@ -109,13 +110,19 @@ p.message {
     }
 }
 
-
-
-
 @media screen and (max-width: 767px) {
     .station, .videobox, .audiobox {
       display: block;
       margin-left: auto;
       margin-right: auto;
     }
+}
+
+@media screen and (max-width: 633px) {
+  .copyright, .icon_fonts {
+    display: block;
+  }
+  .icon_fonts {
+    float: none;
+  }
 }

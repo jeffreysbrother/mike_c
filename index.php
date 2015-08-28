@@ -35,10 +35,8 @@ include('inc/header.php');
         <h3>EVENTS</h1>
         <p>No Events Scheduled.</p>
       </div>
-
+    </div>
 
     <?php
     include('inc/footer.php');
     ?>
-    </div>
-  </div>
