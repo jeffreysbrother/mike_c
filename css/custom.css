@@ -24,11 +24,6 @@ audio {
   top: 65px;
 }
 
-.copyright {
-  display: inline;
-}
-
-
 h3, h2 {
   color: #E7D3B1;
   font-weight: 200;
@@ -95,7 +90,6 @@ p.message {
 }
 
 span a {
-  text-align: right;
   font-size: 21px;
   letter-spacing: 15px;
   padding-left: 10px;
@@ -105,16 +99,18 @@ i {
   color: #bdbdbd;
 }
 
+.copyright {
+  display: inline;
+  padding-right: 10px;
+  font-size: 1em;
+}
+
 .text-bottom {
   text-align: center;
 }
 
 .bottom-spacer {
   height: 160px;
-}
-
-.copyright {
-  padding-right: 10px;
 }
 
 @media screen and (max-width: 431px) {
