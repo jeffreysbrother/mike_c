@@ -60,12 +60,6 @@ textarea {
   color: black;
 }
 
-.submit input {
-  width: 100px;
-  height: 40px;
-  background-color: blue;
-}
-
 input {
   color: black;
 }
@@ -78,6 +72,7 @@ input {
   font-weight: bold;
 }
 
+/* p.message is for the error message styles */
 p.message {
     background: #E7D3B1;
     border: 1px solid #f16702;
@@ -95,7 +90,7 @@ span a {
   padding-left: 10px;
 }
 
-i {
+i, .thanks {
   color: #bdbdbd;
 }
 
@@ -152,14 +147,16 @@ MEDIA QUERIES
 }
 
 @media screen and (max-width: 526px) {
-
-  i {
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-  .icons {
-    display: block;
-    text-align: center;
-  }
+    i {
+      text-align: center;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    .icons {
+      display: block;
+      text-align: center;
+    }
+    span a {
+      font-size: 26px;
+    }
 }

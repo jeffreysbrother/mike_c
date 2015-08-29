@@ -66,7 +66,7 @@ include('inc/header.php');
 
 <?php
 if (isset($_GET["status"]) AND $_GET["status"] == "thanks") { ?>
-        <h1>Thanks for the email!</h1>
+        <h1 class="thanks">Thanks for the email!</h1>
 <?php } else { ?>
 
             <?php
