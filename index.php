@@ -7,11 +7,6 @@ include('inc/header.php');
       <div class="row">
         <div class="col-md-12">
           <img class="center-block img-responsive" src="img/mike_at_piano.jpg" alt="">
-
-      <!-- <div class="subtitle">
-        <h1 class="blue">MICHAEL<br>CHAMBERS</h1>
-        <h6>Film Composer, Songwriter, Producer</h6>
-      </div> -->
         </div>
       </div>
 
@@ -37,7 +32,7 @@ include('inc/header.php');
       </div>
     </div>
 
-    
+
 
     <?php
     include('inc/footer.php');
