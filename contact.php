@@ -49,8 +49,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       }
     }
 }
-
-
 ?>
 
 <?php
@@ -75,10 +73,7 @@ if (isset($_GET["status"]) AND $_GET["status"] == "thanks") { ?>
               }
             ?>
 
-
-
             <form class="contact_form" method="post" action="contact.php">
-
                         <p>
                             <input class="form1" type="text" name="name" id="name" placeholder="name" value="<?php if (isset($name)) { echo htmlspecialchars($name); }?>">
                         </p>
@@ -101,9 +96,7 @@ if (isset($_GET["status"]) AND $_GET["status"] == "thanks") { ?>
           </div>
         </div>
 
-
 <?php } ?>
-
 
 <?php
 include('inc/footer.php');

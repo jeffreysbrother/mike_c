@@ -79,19 +79,11 @@ include('inc/header.php');
     </div>
 
 
-
-
-
-
-
-
 </div>
-
 
   <?php
   include('inc/footer.php');
   ?>
-
 
   <!-- the script below allows only one audio track to play at a given time -->
   <script type="text/javascript">
