@@ -70,6 +70,7 @@ input {
 
 .button1 {
   font-weight: bold;
+  background-color: #E5E5E5;
 }
 
 /* p.message is for the error message styles */
