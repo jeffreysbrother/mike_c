@@ -12,7 +12,7 @@ include('inc/header.php');
 
     <div class="row">
       <div class="col-md-12 col-lg-9 col-lg-offset-1">
-        <h3>FEATURED REVIEWS</h1>
+        <h3><span class="hidden-text">FEATURED </span>REVIEWS</h1>
         <p>"His songs are crafted to the finest degree with clean melodies and pop hooks that are as upbeat as they come."<br>
         <span>&ndash; We All Want Someone</span></p>
         <p>"He's got insanely catchy tunes that just beg to be put on repeat. It's like musical candy. It seems light and sugary at first, but the lyrics are deceptively sly. It's such good stuff, can I have some more?"
