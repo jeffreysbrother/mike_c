@@ -159,4 +159,7 @@ MEDIA QUERIES
     span a {
       font-size: 26px;
     }
+    .navbar-fixed-bottom {
+      display: none;
+    }
 }
