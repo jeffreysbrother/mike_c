@@ -9,18 +9,12 @@ include('inc/header.php');
 
           <h2>Music</h2>
 
-          <p>Action</p>
+          <!-- <p>Action</p>
           <audio src="audio/Action.mp3" controls>
             <p>Your browser does not support the <code>audio</code> element.</p>
-          </audio>
-
-          <p>Ambient</p>
-          <audio src="audio/Ambient.wav" controls>
-            <p>Your browser does not support the <code>audio</code> element.</p>
-          </audio>
-
-          <p>Baroque Pop</p>
-          <audio src="audio/Baroque_Pop.wav" controls>
+          </audio> -->
+          <p>Fantasy Adventure</p>
+          <audio src="audio/Fantasty_Adventure.mp3" controls>
             <p>Your browser does not support the <code>audio</code> element.</p>
           </audio>
 
@@ -29,8 +23,23 @@ include('inc/header.php');
             <p>Your browser does not support the <code>audio</code> element.</p>
           </audio>
 
-          <p>Fantasy Adventure</p>
-          <audio src="audio/Fantasty_Adventure.mp3" controls>
+          <p>Thematic Medley</p>
+          <audio src="audio/Thematic_Medley.mp3" controls>
+            <p>Your browser does not support the <code>audio</code> element.</p>
+          </audio>
+
+          <p>Indie Flick</p>
+          <audio src="audio/Indie_Flick.mp3" controls>
+            <p>Your browser does not support the <code>audio</code> element.</p>
+          </audio>
+
+          <p>Love Theme</p>
+          <audio src="audio/Love_Theme.mp3" controls>
+            <p>Your browser does not support the <code>audio</code> element.</p>
+          </audio>
+
+          <p>Romantic Comedy</p>
+          <audio src="audio/RomCom.mp3" controls>
             <p>Your browser does not support the <code>audio</code> element.</p>
           </audio>
 
@@ -39,18 +48,18 @@ include('inc/header.php');
             <p>Your browser does not support the <code>audio</code> element.</p>
           </audio>
 
-          <p>Romantic Comedy</p>
-          <audio src="audio/Romantic_Comedy.mp3" controls>
+          <p>Ambient</p>
+          <audio src="audio/Ambient.wav" controls>
             <p>Your browser does not support the <code>audio</code> element.</p>
           </audio>
 
-          <p>Thematic Medley</p>
-          <audio src="audio/Thematic_Medley.mp3" controls>
+          <p>Hopeful</p>
+          <audio src="audio/Hopeful.mp3" controls>
             <p>Your browser does not support the <code>audio</code> element.</p>
           </audio>
 
-          <p>Western Title</p>
-          <audio src="audio/Western_Title.wav" controls>
+          <p>No More Echoes (song)</p>
+          <audio src="audio/No_More_Echoes_Mix_v2.mp3" controls>
             <p>Your browser does not support the <code>audio</code> element.</p>
           </audio>
 
