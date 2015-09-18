@@ -15,8 +15,9 @@ p {
 }
 
 audio {
-  background-color: white;
+  background-color: gray;
   border-radius: 5px;
+  margin: 2px;
 }
 
 .station {

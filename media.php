@@ -33,10 +33,10 @@ include('inc/header.php');
             <p>Your browser does not support the <code>audio</code> element.</p>
           </audio>
 
-          <!-- <p>Love Theme</p>
+          <p>Love Theme</p>
           <audio src="audio/Love_Theme.mp3" controls>
             <p>Your browser does not support the <code>audio</code> element.</p>
-          </audio> -->
+          </audio>
 
           <p>Romantic Comedy</p>
           <audio src="audio/RomCom.mp3" controls>
@@ -49,7 +49,7 @@ include('inc/header.php');
           </audio>
 
           <p>Ambient</p>
-          <audio src="audio/Ambient.wav" controls>
+          <audio src="audio/Ambient.mp3" controls>
             <p>Your browser does not support the <code>audio</code> element.</p>
           </audio>
 
