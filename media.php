@@ -71,9 +71,9 @@ include('inc/header.php');
 
           <iframe class="img-responsive" width="400" height="260" src="https://www.youtube.com/embed/kEcSPpkk-tg" frameborder="0" allowfullscreen></iframe>
 
-          <br>
+          <!-- <br>
 
-          <iframe class="img-responsive" width="400" height="260" src="https://www.youtube.com/embed/oBfd0siZiO0" frameborder="0" allowfullscreen></iframe>
+          <iframe class="img-responsive" width="400" height="260" src="https://www.youtube.com/embed/oBfd0siZiO0" frameborder="0" allowfullscreen></iframe> -->
         </div>
       </div>
     </div>
