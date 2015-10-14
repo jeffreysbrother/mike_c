@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   require_once("inc/class.phpmailer.php");
   $mail = new PHPMailer();
 
-  if (!isset($error_message) && !$mail->ValidateAddress($email)){
+  if (!isset($error_message) && (!$mail->ValidateAddress($email) OR stripos($email, '.com') == FALSE)){
   $error_message = "You must specify a valid email address.";
   }
 
