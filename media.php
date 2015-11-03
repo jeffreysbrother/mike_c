@@ -9,10 +9,6 @@ include('inc/header.php');
 
           <h2>Music</h2>
 
-          <!-- <p>Action</p>
-          <audio src="audio/Action.mp3" controls>
-            <p>Your browser does not support the <code>audio</code> element.</p>
-          </audio> -->
           <p>Fantasy Adventure</p>
           <audio src="audio/Fantasty_Adventure.mp3" controls>
             <p>Your browser does not support the <code>audio</code> element.</p>
@@ -80,9 +76,6 @@ include('inc/header.php');
 
           <iframe class="img-responsive" width="400" height="260" src="https://www.youtube.com/embed/kEcSPpkk-tg" frameborder="0" allowfullscreen></iframe>
 
-          <!-- <br>
-
-          <iframe class="img-responsive" width="400" height="260" src="https://www.youtube.com/embed/oBfd0siZiO0" frameborder="0" allowfullscreen></iframe> -->
         </div>
       </div>
     </div>
