@@ -35,9 +35,6 @@ h3, h2 {
   padding-top: 6px;
 }
 
-h2.video-text {
-  text-align: center;
-}
 
 /**********************************
 CONTACT PAGE
@@ -143,7 +140,7 @@ MEDIA QUERIES
       display: table;
       margin: 0 auto;
     }
-    .audiobox h2, .videobox h2 {
+    .audiobox h2, h2.video-text {
       text-align: center;
     }
 }
