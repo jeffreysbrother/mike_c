@@ -67,16 +67,26 @@ include('inc/header.php');
 
       <div class="row">
       <div class="col-sm-3 col-sm-offset-4 col-md-4 col-md-offset-2">
-        <div class="videobox">
-          <h2>Video</h2>
+        <!-- <div class="videobox"> -->
+          <h2 class="video-text">Video</h2>
           <br>
-          <iframe class="img-responsive" width="400" height="260" src="https://www.youtube.com/embed/ebjJ_4R3no4" frameborder="0" allowfullscreen></iframe>
+          <!-- <iframe class="img-responsive" width="400" height="260" src="https://www.youtube.com/embed/ebjJ_4R3no4" frameborder="0" allowfullscreen></iframe>
 
           <br>
 
-          <iframe class="img-responsive" width="400" height="260" src="https://www.youtube.com/embed/kEcSPpkk-tg" frameborder="0" allowfullscreen></iframe>
+          <iframe class="img-responsive" width="400" height="260" src="https://www.youtube.com/embed/kEcSPpkk-tg" frameborder="0" allowfullscreen></iframe> -->
 
-        </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ebjJ_4R3no4"></iframe>
+          </div>
+
+          <br>
+
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kEcSPpkk-tg"></iframe>
+          </div>
+
+        <!-- </div> -->
       </div>
     </div>
 

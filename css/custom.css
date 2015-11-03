@@ -35,6 +35,10 @@ h3, h2 {
   padding-top: 6px;
 }
 
+h2.video-text {
+  text-align: center;
+}
+
 /**********************************
 CONTACT PAGE
 ***********************************/
